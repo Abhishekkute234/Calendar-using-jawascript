@@ -1,3 +1,16 @@
+// Leap Year Calculation: The functions isLeapYear and getFebDays are used to determine if a given year is a leap year and return the number of days in February accordingly.
+
+// Initialization: It initializes various variables and selects elements from the DOM for manipulation.
+
+// Event Handling: It sets up event handlers for clicking on the month picker, previous year, and next year buttons.
+
+// Generate Calendar Function: The generateCalendar function populates the calendar grid with the days of the selected month. It calculates the number of days in the month, the first day of the month, and then dynamically generates the calendar grid with appropriate date values. It also highlights the current date.
+
+// Month List: It dynamically generates a list of months that can be selected. When a month is clicked, it updates the displayed calendar accordingly.
+
+// Initial Calendar Generation: It generates the calendar for the current month and year upon page load.
+
+// Updating Current Time: It sets up an interval to update the displayed current time every second.
 const isLeapYear = (year) => {
     return (
       (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) ||
